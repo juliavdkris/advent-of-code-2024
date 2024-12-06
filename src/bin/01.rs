@@ -4,10 +4,10 @@ use itertools::Itertools;
 
 
 pub fn part_one(input: &str) -> Option<u32> {
-	let nums: Vec<u32> = input
+	let nums = input
 		.split_ascii_whitespace()
 		.map(|n| n.parse::<u32>().expect("Could not parse number"))
-		.collect();
+		.collect_vec();
 
 	let col1 = nums
 		.iter()
@@ -30,10 +30,10 @@ pub fn part_one(input: &str) -> Option<u32> {
 
 
 pub fn part_two(input: &str) -> Option<u32> {
-	let nums: Vec<u32> = input
+	let nums = input
 		.split_ascii_whitespace()
 		.map(|n| n.parse::<u32>().expect("Could not parse number"))
-		.collect();
+		.collect_vec();
 
 	let col1 = nums
 		.iter()
